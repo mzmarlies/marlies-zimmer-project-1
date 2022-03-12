@@ -1,0 +1,30 @@
+.wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: $tertiary;
+}
+
+button {
+    font-size: $base-font-size;
+    text-align: center;
+    line-height: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding:20px 20px;
+    width: 100%;
+
+    &:hover {
+        background-color: transparent;
+        color: $primary;
+    }
+
+    &:focus {
+        background-color: transparent;
+        color: $primary;
+    }
+}
