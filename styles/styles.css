@@ -225,6 +225,22 @@ html {
   font-size: 125%;
 }
 
+ul,
+li,
+a,
+input,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h3,
+ul,
+button,
+footer {
+  text-align: center;
+}
+
 h1,
 h2,
 h3,
@@ -259,25 +275,18 @@ h4 {
   letter-spacing: 1px;
 }
 
-p {
+p,
+footer {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   line-height: 1.6rem;
   color: #ffffff;
 }
 
-ul,
-li,
-a,
-input {
-  margin: 0;
-  padding: 0;
-}
-
-h3,
-ul,
-button {
-  text-align: center;
+footer p {
+  color: black;
+  background-color: #86E0F9;
+  padding: 5px;
 }
 
 ul {
@@ -294,6 +303,18 @@ a {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.header-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.header-nav ul li {
+  margin: 10px 30px;
 }
 
 .wrapper {
