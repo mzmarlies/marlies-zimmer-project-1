@@ -1,0 +1,58 @@
+// FORM STYLES:
+
+.form-section {
+    display: flex;
+    width: 60%;
+    padding: 50px;
+}
+
+
+
+input,
+textarea {
+    border: none;
+    font-family: $body-font;
+    color: $solid-white;
+    background-color: $tertiary;
+    margin: 20px 10px;
+    padding: 10px 20px;
+    
+    &::placeholder {
+        font-family: $body-font;
+        color: $solid-white;
+        font-size: $base-font-size;
+    }
+    &:focus,
+    &:hover {
+        background-color: #111e35;
+        border: 1px solid #b1caf5;
+        transition: 0.2s;
+    }
+}
+
+input {
+    border-bottom: 1px solid $primary;
+    width: calc(50% - 23px);
+}
+
+textarea {
+    border: 1px solid $primary;
+    width: 100%;
+}
+
+.comment-button {
+    background-color: $secondary;
+}
+
+.submit-button {
+        background-color: $tertiary;
+}
+
+.contact-section {
+    background-color: $secondary;
+    
+    input,
+    textarea {
+        background-color: $secondary;
+    }
+}

@@ -1,4 +1,4 @@
-// _typography.scss
+// TYPOGRAPHY STYLES:
 
 html {
     font-size: 125%;
@@ -83,6 +83,11 @@ a {
     color: $solid-white;
     cursor: pointer;
     transition: 0.3s;
+
+    &:hover,
+    &focus {
+        color: $primary;
+    }
 }
 
 .header-nav ul {
