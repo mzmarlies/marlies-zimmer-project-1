@@ -17,40 +17,45 @@
 
 
 .blog-intro {
-    height: 100vh;
+    height: auto;
     background-color: $secondary;
     position: relative;
+    height: 90vh;
+
+    // p {
+    //     margin-bottom: 20px;
+    // }
     
     .additions,
     .nemo {
         display: flex;
         justify-content: space-between;
-        
-        a {
-            margin: 20px 0;
-        }
+        align-items: space-between;
     }
 
     .additions-img,
     .nemo-img {
-        height: 55vh;
+        height: 50vh;
         margin: 20px;
         position: absolute;
     }
 
     .additions-text,
     .nemo-text {
-        margin: 50px;
+        margin: 20px;
         width: 40%;
     }
     
     .additions {
         justify-content: flex-end;
+        margin-bottom: 25px;
     }
 
     .nemo {
         justify-content: flex-start;
+        margin-top: 25px;
     }
+
     .additions-img {
         margin: 0;
         top: -50px;
@@ -113,10 +118,68 @@
     }
 }
 
-.gallery {
-    background-image: url("./assets/banner.jpg");
-    height: 60vh;
+// .gallery-top {
+//     background-image: url("../assets/banner.jpg");
+//     height: 60vh;
+//     width: 100%;
+//     background-position: top;
+//     background-repeat: no-repeat;
+// }
+
+
+
+.gallery-top {
+    height: 100%;
     width: 100%;
-    background-position: top;
-    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+     
+    img {
+        width: 100%;
+    }
 }
+
+.profile {
+    height: 55vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .profile-img {
+        height: 35vh;
+        margin: 30px;
+        box-shadow: 30px 30px $primary;
+    }
+
+    .profile-text {
+        margin: 30px;
+        text-align: left;
+
+        p {
+            padding: 0;
+        }
+
+    }
+}
+
+
+.gallery-images {
+    height: 70vh;
+    width: 100%;
+    background-color: $secondary;
+    
+    .gallery-flex {
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+    }
+
+    .gal-img {
+        margin: 10px;
+        height: 55vh;
+        display: inline-block;
+        width: calc(33% - 30px);
+        // align-self: center;
+    }
+}
+

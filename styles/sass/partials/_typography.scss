@@ -102,20 +102,20 @@ a {
     }
 }
 
-// WHY AREN'T MY ANCHOR STYLES APPLYING TO ABOUT AND PROFILE SECTION?
+a {
+    margin: 10px 0;
+}
  
 .about a,
 .month-profile a {
     color: black;
     background-color: $primary;
     padding: 10px 30px;
-    margin: 100px;
 }
 
 .blog-intro a {
     background-color: $tertiary;
     padding: 10px 30px;
-    margin: 100px;
 }
 
 .additions a {
@@ -129,4 +129,11 @@ a {
     li {
         margin: 10px 30px;
     }
+}
+
+.contact-intro a,
+.profile a {
+    color: black;
+    background-color: $primary;
+    padding: 10px 30px;
 }
