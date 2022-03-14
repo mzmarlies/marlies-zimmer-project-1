@@ -227,7 +227,6 @@ html {
 
 ul,
 li,
-a,
 input,
 p {
   margin: 0;
@@ -258,21 +257,27 @@ button {
 h1 {
   font-size: 6.9rem;
   line-height: 6.3rem;
+  width: 25%;
+  text-align: left;
+  margin: 50px;
 }
 
 h2 {
   font-size: 4rem;
   line-height: 4.6rem;
+  margin-top: 160px;
 }
 
 h3 {
   font-size: 2.1rem;
   letter-spacing: 1px;
+  padding: 30px;
 }
 
 h4 {
   font-size: 1.6rem;
   letter-spacing: 1px;
+  padding: 20px 0;
 }
 
 p,
@@ -283,10 +288,14 @@ footer {
   color: #ffffff;
 }
 
+p {
+  padding: 10px;
+}
+
 footer p {
+  padding: 5px;
   color: black;
   background-color: #86E0F9;
-  padding: 5px;
 }
 
 ul {
@@ -306,6 +315,24 @@ a {
 }
 a:hover, afocus {
   color: #86E0F9;
+}
+
+.about a,
+.month-profile a {
+  color: black;
+  background-color: #86E0F9;
+  padding: 10px 30px;
+  margin: 100px;
+}
+
+.blog-intro a {
+  background-color: #0C1423;
+  padding: 10px 30px;
+  margin: 100px;
+}
+
+.additions a {
+  text-align: left;
 }
 
 .header-nav ul {
@@ -351,11 +378,20 @@ button:focus {
   color: #86E0F9;
 }
 
+img {
+  height: 100%;
+  width: auto;
+}
+
 header {
   height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
   position: relative;
 }
 
@@ -379,6 +415,148 @@ header {
 
 .contact-header {
   background-image: url(../assets/contact-header.jpg);
+}
+
+.header-img {
+  text-align: right;
+  height: 90vh;
+}
+.header-img img {
+  position: absolute;
+  top: 180px;
+  right: 0;
+}
+
+.about {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 50px;
+}
+.about p {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.blog-intro {
+  height: 100vh;
+  background-color: #0f614e;
+  position: relative;
+}
+.blog-intro .additions,
+.blog-intro .nemo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blog-intro .additions a,
+.blog-intro .nemo a {
+  margin: 20px 0;
+}
+.blog-intro .additions-img,
+.blog-intro .nemo-img {
+  height: 55vh;
+  margin: 20px;
+  position: absolute;
+}
+.blog-intro .additions-text,
+.blog-intro .nemo-text {
+  margin: 50px;
+  width: 40%;
+}
+.blog-intro .additions {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.blog-intro .nemo {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.blog-intro .additions-img {
+  margin: 0;
+  top: -50px;
+  left: 0;
+  -webkit-box-shadow: 30px 30px #86E0F9;
+          box-shadow: 30px 30px #86E0F9;
+}
+.blog-intro .nemo-img {
+  margin: 0;
+  bottom: -50px;
+  right: 0;
+  -webkit-box-shadow: -30px 30px #86E0F9;
+          box-shadow: -30px 30px #86E0F9;
+}
+.blog-intro .additions-text {
+  text-align: left;
+}
+.blog-intro .additions-text p {
+  padding-left: 0;
+}
+.blog-intro .nemo-text {
+  text-align: right;
+}
+.blog-intro .nemo-text p {
+  padding-right: 0;
+}
+
+.contact-intro {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-intro p {
+  padding: 0;
+}
+.contact-intro .top-info,
+.contact-intro .bottom-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact-intro .top-info > div,
+.contact-intro .bottom-info > div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(50% - 20px);
+  padding: 20px;
+}
+
+.gallery {
+  background-image: url("./assets/banner.jpg");
+  height: 60vh;
+  width: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .form-section {

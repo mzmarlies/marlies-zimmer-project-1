@@ -1,0 +1,122 @@
+// HEADER MAIN SECTION
+
+.about  {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    
+    p {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+.blog-intro {
+    height: 100vh;
+    background-color: $secondary;
+    position: relative;
+    
+    .additions,
+    .nemo {
+        display: flex;
+        justify-content: space-between;
+        
+        a {
+            margin: 20px 0;
+        }
+    }
+
+    .additions-img,
+    .nemo-img {
+        height: 55vh;
+        margin: 20px;
+        position: absolute;
+    }
+
+    .additions-text,
+    .nemo-text {
+        margin: 50px;
+        width: 40%;
+    }
+    
+    .additions {
+        justify-content: flex-end;
+    }
+
+    .nemo {
+        justify-content: flex-start;
+    }
+    .additions-img {
+        margin: 0;
+        top: -50px;
+        left: 0;
+        box-shadow: 30px 30px $primary;
+    }
+
+    .nemo-img {
+        margin: 0;
+        bottom: -50px;
+        right: 0;
+        box-shadow: -30px 30px $primary;
+    }
+
+
+    .additions-text {
+        text-align: left;
+        // display: flex;
+        // flex-direction: column;
+
+        p {
+            padding-left: 0;
+        }
+    }
+
+    .nemo-text {
+        text-align: right;
+
+        p {
+            padding-right: 0;
+        }
+    }
+}
+
+
+
+
+.contact-intro {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    p {
+        padding: 0;
+    }
+
+    .top-info,
+    .bottom-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top-info > div,
+    .bottom-info > div {
+        flex-direction: column;
+        width: calc(50% - 20px);
+        padding: 20px;
+    }
+}
+
+.gallery {
+    background-image: url("./assets/banner.jpg");
+    height: 60vh;
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}

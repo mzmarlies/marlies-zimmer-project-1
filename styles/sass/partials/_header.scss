@@ -1,10 +1,11 @@
 // HEADER STYLES:
-
 header {
     height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    text-align: center;
     position: relative;
 }
 
@@ -30,4 +31,16 @@ header {
 .contact-header {
     background-image: url(../assets/contact-header.jpg);
 } 
+
+
+.header-img {
+    text-align: right;
+    height: 90vh;
+
+    img {
+        position: absolute;
+        top: 180px;
+        right: 0;
+    }
+}
 
