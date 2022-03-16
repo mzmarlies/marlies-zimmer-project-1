@@ -277,7 +277,7 @@ h3 {
 h4 {
   font-size: 1.6rem;
   letter-spacing: 1px;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 p,
@@ -464,10 +464,22 @@ header {
 }
 
 .blog-intro {
-  height: auto;
   background-color: #0f614e;
   position: relative;
   height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .blog-intro .additions,
 .blog-intro .nemo {
@@ -483,14 +495,13 @@ header {
 }
 .blog-intro .additions-img,
 .blog-intro .nemo-img {
-  height: 50vh;
-  margin: 20px;
+  height: 60%;
   position: absolute;
 }
 .blog-intro .additions-text,
 .blog-intro .nemo-text {
   margin: 20px;
-  width: 40%;
+  width: 43%;
 }
 .blog-intro .additions {
   -webkit-box-pack: end;
@@ -506,26 +517,28 @@ header {
 }
 .blog-intro .additions-img {
   margin: 0;
-  top: -50px;
+  top: -70px;
   left: 0;
   -webkit-box-shadow: 30px 30px #86E0F9;
           box-shadow: 30px 30px #86E0F9;
 }
 .blog-intro .nemo-img {
   margin: 0;
-  bottom: -50px;
+  bottom: -60px;
   right: 0;
   -webkit-box-shadow: -30px 30px #86E0F9;
           box-shadow: -30px 30px #86E0F9;
 }
 .blog-intro .additions-text {
   text-align: left;
+  margin-left: 0;
 }
 .blog-intro .additions-text p {
   padding-left: 0;
 }
 .blog-intro .nemo-text {
   text-align: right;
+  margin-right: 0;
 }
 .blog-intro .nemo-text p {
   padding-right: 0;
@@ -547,9 +560,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.contact-intro p {
-  padding: 0;
-}
 .contact-intro .top-info,
 .contact-intro .bottom-info {
   display: -webkit-box;
@@ -559,14 +569,42 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.contact-intro .top-info > div,
-.contact-intro .bottom-info > div {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.contact-intro .subsection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: calc(50% - 20px);
   padding: 20px;
+}
+.contact-intro .contact-text h4 {
+  padding-right: 10px;
+  margin-left: 8px;
+}
+.contact-intro .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+}
+.contact-intro .icon a {
+  border-radius: 50%;
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  font-size: 36px;
+  margin: 10px;
+}
+.contact-intro .icon a .fa-solid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .gallery-top {
@@ -609,6 +647,12 @@ header {
   height: 70vh;
   width: 100%;
   background-color: #0f614e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .gallery-images .gallery-flex {
   display: -webkit-box;

@@ -17,15 +17,14 @@
 
 
 .blog-intro {
-    height: auto;
     background-color: $secondary;
     position: relative;
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    // p {
-    //     margin-bottom: 20px;
-    // }
-    
     .additions,
     .nemo {
         display: flex;
@@ -35,15 +34,15 @@
 
     .additions-img,
     .nemo-img {
-        height: 50vh;
-        margin: 20px;
+        height: 60%;
+        // margin: 0;
         position: absolute;
     }
 
     .additions-text,
     .nemo-text {
         margin: 20px;
-        width: 40%;
+        width: 43%;
     }
     
     .additions {
@@ -58,14 +57,14 @@
 
     .additions-img {
         margin: 0;
-        top: -50px;
+        top: -70px;
         left: 0;
         box-shadow: 30px 30px $primary;
     }
 
     .nemo-img {
         margin: 0;
-        bottom: -50px;
+        bottom: -60px;
         right: 0;
         box-shadow: -30px 30px $primary;
     }
@@ -73,8 +72,7 @@
 
     .additions-text {
         text-align: left;
-        // display: flex;
-        // flex-direction: column;
+        margin-left: 0;
 
         p {
             padding-left: 0;
@@ -83,6 +81,7 @@
 
     .nemo-text {
         text-align: right;
+        margin-right: 0;
 
         p {
             padding-right: 0;
@@ -100,31 +99,48 @@
     justify-content: center;
     align-items: center;
     
-    p {
-        padding: 0;
-    }
-
     .top-info,
     .bottom-info {
         display: flex;
         justify-content: space-between;
     }
 
-    .top-info > div,
-    .bottom-info > div {
-        flex-direction: column;
+    .subsection {
+        display: flex;
         width: calc(50% - 20px);
         padding: 20px;
     }
-}
 
-// .gallery-top {
-//     background-image: url("../assets/banner.jpg");
-//     height: 60vh;
-//     width: 100%;
-//     background-position: top;
-//     background-repeat: no-repeat;
-// }
+    .contact-text h4 {
+        padding-right: 10px;
+        margin-left: 8px;
+    }
+
+    .icon {
+        display: flex;
+        height: 80px;
+    
+        
+        a {
+            border-radius: 50%;
+            display: inline-block;
+            width: 60px;
+            text-align: center;
+            font-size: 36px;
+            margin: 10px;
+            
+            .fa-solid {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+        }
+    
+    }
+
+}
 
 
 
@@ -167,11 +183,12 @@
     height: 70vh;
     width: 100%;
     background-color: $secondary;
+    display: flex;
+    align-items: center;
     
     .gallery-flex {
         display: flex;
         justify-content: center;
-        // align-items: center;
     }
 
     .gal-img {
@@ -179,7 +196,6 @@
         height: 55vh;
         display: inline-block;
         width: calc(33% - 30px);
-        // align-self: center;
     }
 }
 
