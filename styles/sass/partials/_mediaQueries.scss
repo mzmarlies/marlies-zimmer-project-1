@@ -1,0 +1,56 @@
+@media (max-width: 1250px) {
+    // BASE STYLES:
+    .wrapper {
+        max-width: 1200px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    // BLOG-INTRO
+    .blog-intro {
+        height: auto;
+    }
+
+    .additions {
+        height: 20vh;
+    }
+}
+
+// HOW DO YOU MOVE ABSOLUTELY POSITIONED ELEMENTS WHEN MAKING A PAGE RESPONSIVE?
+
+
+// @media (max-width: 1050px) {
+//     // .additions {
+//     //     height: auto;
+//     //     margin: 0;
+//     // }
+
+//     // .nemo-img {
+//     //     position: relative;
+//     // }
+
+//     // .nemo-text {
+//     //     position: absolute;
+//     //     top: 10px;
+//     //     left: 0;
+//     // }
+// }
+
+@media (max-width: 980px) {
+    // .additions-img,
+    // .nemo-img  {
+    //     display: inline-block;
+    // }
+    // .additions-img {
+    //     margin: 0;
+    //     top: 100px;
+    //     left: 0%;
+    //     box-shadow: 30px 30px $primary;
+    // }
+
+    // .nemo-img {
+    //     margin: 0;
+    //     bottom: 100px;
+    //     right: 0;
+    //     box-shadow: -30px 30px $primary;
+    // }
+}

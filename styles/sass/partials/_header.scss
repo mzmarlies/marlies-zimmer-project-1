@@ -35,12 +35,11 @@ header {
 
 .header-img {
     text-align: right;
-    height: 90vh;
-
-    img {
-        position: absolute;
-        top: 180px;
-        right: 0;
-    }
+    height: auto;
+    width: 50%;
+    position: absolute;
+    top: 180px;
+    right: 0;
+    
 }
 

@@ -1,4 +1,4 @@
-// HEADER MAIN SECTION
+// ABOUT SECTION
 
 .about  {
     height: 90vh;
@@ -15,15 +15,21 @@
 }
 
 
+// BLOG-INTRO SECTION:
 
 .blog-intro {
     background-color: $secondary;
     position: relative;
-    height: 90vh;
+    height: auto;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .additions {
+        height: 40vh;
+    }
 
     .additions,
     .nemo {
@@ -34,15 +40,15 @@
 
     .additions-img,
     .nemo-img {
-        height: 60%;
-        // margin: 0;
+        height: auto;
+        width: 40%;
         position: absolute;
     }
 
     .additions-text,
     .nemo-text {
         margin: 20px;
-        width: 43%;
+        width: 40%;
     }
     
     .additions {
@@ -57,14 +63,14 @@
 
     .additions-img {
         margin: 0;
-        top: -70px;
-        left: 0;
+        top: -10%;
+        left: 0%;
         box-shadow: 30px 30px $primary;
     }
 
     .nemo-img {
         margin: 0;
-        bottom: -60px;
+        bottom: -5%;
         right: 0;
         box-shadow: -30px 30px $primary;
     }
@@ -90,7 +96,7 @@
 }
 
 
-
+// CONTACT-INTRO SECTION:
 
 .contact-intro {
     height: 80vh;
@@ -98,9 +104,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 50px 0;
     
     .top-info,
     .bottom-info {
+        text-align: left;
         display: flex;
         justify-content: space-between;
     }
@@ -143,6 +151,8 @@
 }
 
 
+// GALLERY SECTION
+
 
 .gallery-top {
     height: 100%;
@@ -162,9 +172,13 @@
     align-items: center;
 
     .profile-img {
-        height: 35vh;
+        height: auto;
+        width: 65%;
+        object-fit: contain;
         margin: 30px;
         box-shadow: 30px 30px $primary;
+
+
     }
 
     .profile-text {
@@ -180,22 +194,29 @@
 
 
 .gallery-images {
-    height: 70vh;
-    width: 100%;
+    height: auto;
+    padding: 60px 0;
     background-color: $secondary;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     
     .gallery-flex {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
-
+    
     .gal-img {
-        margin: 10px;
-        height: 55vh;
+        height: 50vh;
+        margin: 25px;
         display: inline-block;
-        width: calc(33% - 30px);
+        width: calc(30% - 40px);
+        
+        img {
+            object-fit: contain;
+            flex-shrink: 2;
+        }
     }
 }
 
