@@ -4,8 +4,8 @@
 
 .blog-main {
     display: flex;
-    justify-content: space-between;
-    height: fit-content;
+    justify-content: flex-end;
+    // height: fit-content;
 }
 
 .main-img {
@@ -39,18 +39,34 @@
 
 
 // SIDE BLOG:
+.blog-main {
+    position: relative;
+}
+
 .side-blog {
     padding-top: 100px;
-    width: 30%;
+    // position: relative;
     
     .side-image {
-        width: 90%;
+        height: auto;
+        width: 33.5%;
+        position: absolute;
+        left: 0;
+        top: 4%;
+        z-index: 10;
     }
 
     .article-text {
-        padding: 30px;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 30px 20px 30px 30px;
+        height: 115vh;
+        width: 380px;
         background-color: $secondary;
+        position: absolute;
+        top: 10px;
+        right: 70px;
 
         .top-text {
             margin-bottom: 40px;
@@ -60,15 +76,15 @@
             font-size: 1.2rem;
         }
 
-        p{
+        p {
             padding: 0;
         }
         
-
+        
         ul li {
-            list-style-type: disc;
-            margin: 0 20px;
-            // padding: 0;
+            margin-left: 15px;
+            list-style: disc;
+            color: $solid-white;
         } 
     }
     

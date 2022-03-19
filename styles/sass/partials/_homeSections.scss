@@ -1,3 +1,5 @@
+
+
 // ABOUT SECTION
 
 .about  {
@@ -21,64 +23,59 @@
     background-color: $secondary;
     position: relative;
     height: auto;
-    padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .additions {
-        height: 40vh;
-    }
-
+    // justify-content: center;
+    // align-items: center;
+    padding: 20px 0;
+    
     .additions,
     .nemo {
         display: flex;
         justify-content: space-between;
-        align-items: space-between;
+        align-items: center;
+        padding: 50px 0;
+        height: 40vh;
     }
 
     .additions-img,
     .nemo-img {
-        height: auto;
-        width: 40%;
-        position: absolute;
+        max-height: 65vh;
+        width: 43%;
+        object-fit: cover;
     }
 
     .additions-text,
     .nemo-text {
-        margin: 20px;
+        vertical-align: center;
+        margin: 50px 0;
         width: 40%;
     }
     
     .additions {
-        justify-content: flex-end;
         margin-bottom: 25px;
     }
 
     .nemo {
-        justify-content: flex-start;
         margin-top: 25px;
+        padding-bottom: 50px;
+
     }
 
     .additions-img {
-        margin: 0;
-        top: -10%;
-        left: 0%;
+        margin: -80px 50px 20px 0;
         box-shadow: 30px 30px $primary;
     }
 
     .nemo-img {
-        margin: 0;
-        bottom: -5%;
-        right: 0;
+        margin: 20px 0 -30px 50px; 
         box-shadow: -30px 30px $primary;
     }
 
 
     .additions-text {
         text-align: left;
-        margin-left: 0;
+        margin: 0 50px 0 0;
 
         p {
             padding-left: 0;
@@ -87,7 +84,7 @@
 
     .nemo-text {
         text-align: right;
-        margin-right: 0;
+        margin: 0 0 0 50px;
 
         p {
             padding-right: 0;
@@ -166,7 +163,7 @@
 }
 
 .profile {
-    height: 55vh;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -185,15 +182,21 @@
         margin: 30px;
         text-align: left;
 
+        p,
+        a {
+            margin-left: 30px;
+            
+        }
+
         p {
-            padding: 0;
+            padding-left: 0;
         }
 
     }
 }
 
 
-.gallery-images {
+.gallery {
     height: auto;
     padding: 60px 0;
     background-color: $secondary;
@@ -201,13 +204,13 @@
     flex-wrap: wrap;
     align-items: center;
     
-    .gallery-flex {
+    .gallery-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
     
-    .gal-img {
+    .gallery-image {
         height: 50vh;
         margin: 25px;
         display: inline-block;
@@ -215,7 +218,6 @@
         
         img {
             object-fit: contain;
-            flex-shrink: 2;
         }
     }
 }

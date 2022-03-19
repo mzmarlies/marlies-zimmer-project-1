@@ -18,8 +18,8 @@ textarea {
     
     &::placeholder {
         font-family: $body-font;
-        color: $solid-white;
         font-size: $base-font-size;
+        opacity: 1;
     }
     &:focus,
     &:hover {

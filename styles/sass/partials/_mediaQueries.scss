@@ -1,56 +1,131 @@
-@media (max-width: 1250px) {
-    // BASE STYLES:
-    .wrapper {
-        max-width: 1200px;
-        width: 95%;
-        margin: 0 auto;
-    }
-    // BLOG-INTRO
-    .blog-intro {
-        height: auto;
+@media (max-width: 1160px) {
+// PROFILE-INTRO
+    .profile-text {
+        width: 100%;
     }
 
-    .additions {
-        height: 20vh;
+    // GALLERY:
+    .gallery {
+        padding: 0;
     }
 }
 
-// HOW DO YOU MOVE ABSOLUTELY POSITIONED ELEMENTS WHEN MAKING A PAGE RESPONSIVE?
 
 
-// @media (max-width: 1050px) {
-//     // .additions {
-//     //     height: auto;
-//     //     margin: 0;
-//     // }
-
-//     // .nemo-img {
-//     //     position: relative;
-//     // }
-
-//     // .nemo-text {
-//     //     position: absolute;
-//     //     top: 10px;
-//     //     left: 0;
-//     // }
-// }
 
 @media (max-width: 980px) {
-    // .additions-img,
-    // .nemo-img  {
-    //     display: inline-block;
-    // }
-    // .additions-img {
-    //     margin: 0;
-    //     top: 100px;
-    //     left: 0%;
-    //     box-shadow: 30px 30px $primary;
-    // }
 
-    // .nemo-img {
-    //     margin: 0;
-    //     bottom: 100px;
-    //     right: 0;
-    //     box-shadow: -30px 30px $primary;
-    // }
+// HEADER:
+    h1 {
+        font-size: 5rem;
+    }
+    .additions,
+    .nemo {
+        height: auto;
+    }
+
+    .nemo {
+        margin-top: 0;
+    }
+
+// CONTACT-INTRO:
+    .contact-intro {
+        height: auto;
+        flex-direction: row;
+        // margin: 150px 0;
+
+        .subsection {
+            width: 100%;
+        }
+
+        .top-info,
+        .bottom-info {
+            flex-direction: column;
+        }
+    }
+
+
+// GALLERY:
+    .gallery-container {
+    flex-direction: column;
+    
+        .gallery-image {
+            margin: 50px auto;
+            height: 80vh;
+            width: 100%;
+        }
+    }
+
+    .additions-img,
+    .nemo-img {
+        margin: 0;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header-nav ul {
+    justify-content: center;
+    }
+
+
+    .header-img {
+        top: 570px; 
+    }
+
+    .about {
+        h3 {
+        width: 60%;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        }
+    }
+
+
+}
+
+@media (max-width: 685px) {
+    .wrapper {
+        max-width: 650px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .about h3 {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        }
+}
+
+@media (max-width: 650px) {
+    .header-img {
+        right: 27%; 
+        height: 232px;
+        width: 281px;
+        border-right: 15px solid $primary;
+    }
+    .about {
+        h3 {
+        width: 100%;
+        margin-top: 350px;
+        padding: 0;
+        }
+
+        p {
+            margin-bottom: 50px;
+        }
+    }
+
 }
