@@ -5,26 +5,24 @@
 .blog-main {
     display: flex;
     justify-content: flex-end;
-    // height: fit-content;
 }
 
 .main-img {
-    padding-left: 30px;
+    padding-left: 35px;
 
     img {
-        box-shadow: -30px 30px $primary;
+        box-shadow: -35px 35px $primary;
     }
 }
 
 .blog {
-    width: 60%;
+    width: 62%;
     display: flex;
     flex-direction: column;
-    position: relative;
-    bottom: 200px;  
+    margin-top: -225px;
     
     .main-blog {
-        margin: 0 100px 10px 0;
+        margin: 0 105px 10px 0;
         border-bottom: 5px solid $primary;
         border-left: 5px solid $primary;
 
@@ -45,33 +43,41 @@
 
 .side-blog {
     padding-top: 100px;
-    // position: relative;
-    
+    width: 30%;
+
     .side-image {
-        height: auto;
-        width: 33.5%;
+        max-height: 20%;
+        max-width: 32%;
+        object-fit: cover;
         position: absolute;
         left: 0;
         top: 4%;
         z-index: 10;
     }
 
+    .img-background {
+        height: 50vh;
+        width: 88%;
+        background-color: $secondary;
+    }
     .article-text {
+        padding: 30px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding: 30px 20px 30px 30px;
-        height: 115vh;
-        width: 380px;
+        // height: auto;
+        width: 88%;
         background-color: $secondary;
-        position: absolute;
-        top: 10px;
-        right: 70px;
 
         .top-text {
-            margin-bottom: 40px;
+            // margin-top: 400px;
+            margin-bottom: 20px;
+           
+            // h4 {
+            //   display: inline-block;
+            // }
         }
-
+        
         h4 {
             font-size: 1.2rem;
         }

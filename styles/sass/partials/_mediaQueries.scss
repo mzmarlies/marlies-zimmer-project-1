@@ -1,15 +1,17 @@
+
+////// ******** HOMEPAGE ******** ///////
+
 @media (max-width: 1160px) {
 // PROFILE-INTRO
     .profile-text {
         width: 100%;
     }
 
-    // GALLERY:
+// GALLERY:
     .gallery {
         padding: 0;
     }
 }
-
 
 
 
@@ -20,7 +22,7 @@
         font-size: 5rem;
     }
     
-    //BLOG-INTRO:
+//BLOG-INTRO:
     .blog-intro {
         .additions,
         .nemo {
@@ -216,6 +218,8 @@
 }
 
 
+
+
 @media (max-width: 480px) {
 // HAVE NAV POP INTO A SLIDE OUT MENU
 
@@ -243,9 +247,86 @@
     }
 
 // GALLERY:
-     .gallery {
+    .gallery {
         .gallery-image {
             height: 50vh;
         }
     }
 }
+
+
+
+
+
+
+////// ******** BLOG PAGE ******** ///////
+@media (max-width: 980px) {
+    .blog-main {
+        flex-direction: column;
+    }
+
+    .side-blog {
+        width: 100%;
+        padding: 50px 0 0 200px;
+        margin-top: 0;
+
+        .side-image {
+        max-height: 30%;
+        max-width: 34.5%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        z-index: 10;
+    }
+    }
+
+    .img-background {
+        display: none;
+    }
+    
+    .article-text {
+        height: 50vh;
+        margin: 0 0 0 100px;
+        padding: 0 100px 0 0;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .top-text,
+        .bottom-text {
+            width: 40%;
+            height: 100%;
+            margin-bottom: 0;
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+
+        .top-text {
+            padding-left: 50px;
+        }
+        
+        .bottom-text {
+            padding-left: 0;
+
+        }
+    }
+
+    .blog {
+        height: auto;
+        width: 100%;
+        margin-top: 50px;
+        
+        .main-blog {
+            margin: 0 auto;
+            align-items: center;
+        }
+    }
+}
+
+    
