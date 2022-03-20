@@ -65,11 +65,13 @@ h4 {
 }
 
 p, 
+h5,
 footer {
     font-family: $body-font;
     font-size: $base-font-size;
     line-height: 1.6rem;
     color: $solid-white;
+    font-weight: lighter;
 }
 
 p {

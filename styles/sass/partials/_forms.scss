@@ -2,7 +2,7 @@
 
 .form-section {
     display: flex;
-    padding: 50px;
+    padding: 0 50px 50px 0;
 }
 
 
@@ -41,6 +41,7 @@ textarea {
 
 .comment-button {
     background-color: $secondary;
+    margin-left: 10px;
 }
 
 .submit-button {
