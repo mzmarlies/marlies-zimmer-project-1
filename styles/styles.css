@@ -382,13 +382,17 @@ button {
   width: 100%;
   border: none;
 }
-button:hover {
-  background-color: transparent;
-  color: #86E0F9;
+
+.comment-button:hover, .comment-button:focus {
+  background-color: #0b4739;
+  color: #ffffff;
+  cursor: pointer;
 }
-button:focus {
-  background-color: transparent;
-  color: #86E0F9;
+
+.submit-button:hover, .submit-button:focus {
+  background-color: #16243f;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 img {
@@ -471,10 +475,12 @@ header {
   padding: 0 20px;
 }
 .hamburger-menu .dropdown-nav li:hover .dropdown-menu,
-.hamburger-menu .dropdown-nav li:focus .dropdown-menu li {
+.hamburger-menu .dropdown-nav li:focus .dropdown-menu li a {
   display: block;
   position: absolute;
   left: 0;
+  color: #86E0F9;
+  text-decoration: underline;
 }
 .hamburger-menu .dropdown-menu {
   display: none;
@@ -483,7 +489,8 @@ header {
   -webkit-transition: 3s;
   transition: 3s;
   padding: 0 10px;
-  background-color: rgba(133, 224, 249, 0.3);
+  color: #ffffff;
+  background-color: rgba(17, 31, 54, 0.7);
 }
 .hamburger-menu .dropdown-menu li {
   padding: 5px 0;
@@ -894,7 +901,7 @@ input:focus, input:hover,
 textarea:focus,
 textarea:hover {
   background-color: #111e35;
-  border: 1px solid #b1caf5;
+  border: 2px solid #b1caf5;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -925,6 +932,11 @@ textarea {
 .contact-section input,
 .contact-section textarea {
   background-color: #0f614e;
+}
+.contact-section input:hover, .contact-section input:focus,
+.contact-section textarea:hover,
+.contact-section textarea:focus {
+  background-color: #0b4739;
 }
 
 .contact-main {
@@ -975,6 +987,10 @@ main .wrapper {
   position: absolute;
   right: 0;
   bottom: 35px;
+}
+
+.submit-button {
+  margin-left: 10px;
 }
 
 .contact-footer {
@@ -1053,6 +1069,12 @@ main .wrapper {
             justify-content: center;
   }
 
+  .home-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .header-img {
     top: 550px;
   }
@@ -1082,9 +1104,9 @@ main .wrapper {
     height: auto;
   }
   .about h3 {
+    vertical-align: center;
     width: 60%;
-    padding-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
   .about p {
     padding-top: 50px;
@@ -1218,7 +1240,7 @@ main .wrapper {
   }
 
   .header-img {
-    right: 23%;
+    right: 20px;
   }
 
   .subsection {

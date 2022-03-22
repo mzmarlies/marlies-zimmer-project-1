@@ -20,15 +20,23 @@ button {
     padding: 10px;
     width: 100%;
     border: none;
+}
 
-    &:hover {
-        background-color: transparent;
-        color: $primary;
-    }
-
+.comment-button {
+    &:hover,
     &:focus {
-        background-color: transparent;
-        color: $primary;
+        background-color: #0b4739;
+        color: $solid-white;
+        cursor: pointer;
+    }
+}
+
+.submit-button {
+    &:hover,
+    &:focus {
+        background-color: #16243f;
+        color: $solid-white;
+        cursor: pointer;
     }
 }
 
