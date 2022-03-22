@@ -6,7 +6,6 @@
 }
 
 
-
 input,
 textarea {
     border: none;
@@ -50,9 +49,12 @@ textarea {
 
 .contact-section {
     background-color: $secondary;
+    padding: 50px;
     
     input,
     textarea {
         background-color: $secondary;
     }
+
+
 }

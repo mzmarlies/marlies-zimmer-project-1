@@ -29,6 +29,23 @@
                     </li>
                 </ul>
             </nav>
+
+            
+            <!-- DROPDOWN MENU FOR MOBILE SIZE -->
+            <nav class="hamburger-menu">
+                <ul class="dropdown-nav">
+                    <li><span class="menu-icon"><i class="fa-solid fa-bars"></i></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="./index.html">home</a></li>
+                            <li><a href="./index.html#about">about</a></li>
+                            <li><a href="./blog.html">blog</a></li>
+                            <li><a href="./contact.html">contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+
             <div class="top-heading">
                 <h2>get in touch</h2>
             </div>
@@ -38,6 +55,21 @@
 
     <main class="contact-main">
         <div class="wrapper"> 
+            <section class="form-section contact-section">
+                <form action="#" method="POST" class="contact-form" name="contact-form">
+                    <label for="name" class="sr-only">Enter Your Name</label>
+                    <input type="text" id="name" placeholder="Name">
+            
+                    <label for="email" class="sr-only">Enter your email address</label>
+                    <input type="text" id="email" placeholder="Email Address">
+            
+                    <label for="message" class="sr-only">Type a message</label>
+                    <textarea name="message" id="message" placeholder="Message" cols="50" rows="10"></textarea>
+            
+                    <button class="submit-button" type="submit">submit</button>
+                </form>
+            </section> <!-- form section ends -->
+
             <section class="contact">
                 <div class="social-icons">
                     <nav>
@@ -78,25 +110,10 @@
                     <p>M5V2D5</p>
                 </section> <!-- end of contact info -->
             </section> <!-- end of contact -->
-
-            <section class="form-section contact-section">
-                <form action="#" method="POST" class="contact-form" name="contact-form">
-                    <label for="name" class="sr-only">Enter Your Name</label>
-                    <input type="text" id="name" placeholder="Name">
-        
-                    <label for="email" class="sr-only">Enter your email address</label>
-                    <input type="text" id="email" placeholder="Email Address">
-        
-                    <label for="message" class="sr-only">Type a message</label>
-                    <textarea name="message" id="message" placeholder="Message" cols="50" rows="10"></textarea>
-        
-                    <button class="submit-button" type="submit">submit</button>
-                </form>
-            </section> <!-- form section ends -->
         </div> <!-- wrapper ends -->
     </main>
 
-    <footer>
+    <footer class="contact-footer">
         <p>
             Copyright © 2018 HackerYou
         </p>

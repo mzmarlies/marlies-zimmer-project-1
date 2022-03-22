@@ -31,6 +31,7 @@ header {
 
 .contact-header {
     background-image: url(../assets/contact-header.jpg);
+    z-index: 0;
 } 
 
 
@@ -42,4 +43,52 @@ header {
     top: 180px;
     right: 0;  
 }
+
+
+
+// NAV:
+.hamburger-menu {
+    display: none;
+    margin: 10px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 30;
+    
+    .menu-icon {
+        font-size: 1.6rem;
+        position: relative;
+        padding: 20px 0;
+    }
+    
+    .dropdown-nav {
+        position: absolute;
+        margin: 0 20px;
+        padding: 0 20px;
+    }
+    
+    .dropdown-nav li:hover .dropdown-menu,
+    .dropdown-nav li:focus .dropdown-menu li {
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+    
+    .dropdown-menu {
+        display: none;
+        margin: 0;
+        width: 110px;
+        transition: 3s;
+        padding: 0 10px;
+        background-color: rgba(133, 224, 249, 0.3);
+    
+        li {
+            padding: 5px 0;
+            margin-left: 0;
+            padding-left: 0;
+            max-width: 20px;
+        }
+    }
+}
+
 

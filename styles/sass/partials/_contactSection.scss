@@ -6,15 +6,13 @@
 }
 
 main .wrapper {
-    
-    
     position: relative;
 }
 
 
 .social-icons ul {
     display: flex;
-    padding: 0; 
+    padding: 0 0 0 40px; 
     // margin: 0;
 
     li {
@@ -23,6 +21,8 @@ main .wrapper {
 }
 
 .contact-info {
+    padding: 0 0 0 50px;
+    
     p {
         padding: 0;
     }
@@ -30,10 +30,17 @@ main .wrapper {
 
 .contact-section {
     display: flex;
-    justify-content: flex-end;
+    height: auto;
     width: 60%;
+    box-shadow: -30px 30px $primary;
+    justify-content: flex-end;
     position: absolute;
     right: 0;
-    bottom: 50px;
-    box-shadow: -30px 30px $primary;
+    bottom: 35px;
+    // z-index: 30;
+}
+
+
+.contact-footer {
+    margin-top: 50px;
 }
