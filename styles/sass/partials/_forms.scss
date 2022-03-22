@@ -28,10 +28,12 @@ textarea {
     }
 }
 
+
 input {
     border-bottom: 1px solid $primary;
     width: calc(50% - 23px);
 }
+
 
 textarea {
     border: 1px solid $primary;
@@ -60,6 +62,4 @@ textarea {
             background-color: #0b4739;
         }
     }
-
-
 }

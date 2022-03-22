@@ -6,9 +6,11 @@
     margin: 0 auto;
 }
 
+
 body {
     background-color: $tertiary;
 }
+
 
 button {
     font-size: $base-font-size;
@@ -22,6 +24,39 @@ button {
     border: none;
 }
 
+
+.contact-intro a,
+.profile a {
+    color: black;
+    background-color: $primary;
+    padding: 10px 30px;
+}
+
+
+.about a:hover,
+.about a:focus,
+.contact-intro a:hover,
+.contact-intro a:focus,
+.profile a:hover,
+.profile a:focus {
+    background-color: #74c1d6;
+    color: black;
+    cursor: pointer;
+    border: 2px solid $primary;
+}
+
+
+.additions a:hover,
+.additions a:focus,
+.nemo a:hover,
+.nemo a:focus {
+    background-color: #0f1b30;
+    // color: black;
+    cursor: pointer;
+    border: 2px solid $tertiary;
+}
+
+
 .comment-button {
     &:hover,
     &:focus {
@@ -30,6 +65,7 @@ button {
         cursor: pointer;
     }
 }
+
 
 .submit-button {
     &:hover,
@@ -47,12 +83,15 @@ img {
     display: block;
 }
 
+
 a, 
 input, 
 label {
     display: inline-block;
 }
 
+
 article {
     display: inline-block;
 }
+

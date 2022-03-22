@@ -25,9 +25,11 @@ header {
     }
 }
 
+
 .blog-header {
     background-image: url(../assets/blog-header.jpg);
 }
+
 
 .contact-header {
     background-image: url(../assets/contact-header.jpg);
@@ -45,7 +47,6 @@ header {
 }
 
 
-
 // NAV:
 .hamburger-menu {
     display: none;
@@ -55,10 +56,12 @@ header {
     left: 0;
     z-index: 30;
     
+    
     .menu-icon {
         font-size: 1.6rem;
         position: relative;
         padding: 20px 0;
+        cursor: pointer;
     }
     
     .dropdown-nav {
@@ -67,6 +70,7 @@ header {
         padding: 0 20px;
     }
     
+    .dropdown-nav a:active .dropdown-menu,
     .dropdown-nav li:hover .dropdown-menu,
     .dropdown-nav li:focus .dropdown-menu li a {
         display: block;
@@ -74,6 +78,7 @@ header {
         left: 0;
         color: $primary;
         text-decoration: underline;
+        cursor: pointer;
     }
     
     .dropdown-menu {

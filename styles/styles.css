@@ -353,13 +353,6 @@ a {
   margin: 10px 30px;
 }
 
-.contact-intro a,
-.profile a {
-  color: black;
-  background-color: #86E0F9;
-  padding: 10px 30px;
-}
-
 .wrapper {
   max-width: 1280px;
   width: 90%;
@@ -381,6 +374,34 @@ button {
   padding: 10px;
   width: 100%;
   border: none;
+}
+
+.contact-intro a,
+.profile a {
+  color: black;
+  background-color: #86E0F9;
+  padding: 10px 30px;
+}
+
+.about a:hover,
+.about a:focus,
+.contact-intro a:hover,
+.contact-intro a:focus,
+.profile a:hover,
+.profile a:focus {
+  background-color: #74c1d6;
+  color: black;
+  cursor: pointer;
+  border: 2px solid #86E0F9;
+}
+
+.additions a:hover,
+.additions a:focus,
+.nemo a:hover,
+.nemo a:focus {
+  background-color: #0f1b30;
+  cursor: pointer;
+  border: 2px solid #0C1423;
 }
 
 .comment-button:hover, .comment-button:focus {
@@ -468,12 +489,14 @@ header {
   font-size: 1.6rem;
   position: relative;
   padding: 20px 0;
+  cursor: pointer;
 }
 .hamburger-menu .dropdown-nav {
   position: absolute;
   margin: 0 20px;
   padding: 0 20px;
 }
+.hamburger-menu .dropdown-nav a:active .dropdown-menu,
 .hamburger-menu .dropdown-nav li:hover .dropdown-menu,
 .hamburger-menu .dropdown-nav li:focus .dropdown-menu li a {
   display: block;
@@ -481,6 +504,7 @@ header {
   left: 0;
   color: #86E0F9;
   text-decoration: underline;
+  cursor: pointer;
 }
 .hamburger-menu .dropdown-menu {
   display: none;
@@ -1154,19 +1178,15 @@ main .wrapper {
     height: 60vh;
   }
 }
-@media (max-width: 685px) {
+@media (max-width: 650px) {
   h1 {
     font-size: 4rem;
   }
 
-  .about h3 {
-    padding-top: 10px;
-    margin-bottom: 10px;
-  }
-}
-@media (max-width: 650px) {
   .header-img {
-    right: 30%;
+    position: static;
+    margin: 0 auto;
+    margin-top: 200px;
     height: 232px;
     width: 281px;
     border-right: 15px solid #86E0F9;
@@ -1177,7 +1197,7 @@ main .wrapper {
   }
   .about h3 {
     width: 100%;
-    margin-top: 250px;
+    margin-top: 200px;
     padding: 0;
   }
   .about p {
@@ -1186,19 +1206,14 @@ main .wrapper {
     text-align: center;
   }
 }
-@media (max-width: 580px) {
-  .about {
-    margin-bottom: 150px;
-  }
-}
 @media (max-width: 480px) {
   header {
     height: 100vh;
-    vertical-align: center;
+    padding-top: 100px;
   }
 
-  h2 {
-    padding-top: 75px;
+  .home-heading {
+    margin-top: 100px;
   }
 
   .header-nav {
@@ -1207,14 +1222,6 @@ main .wrapper {
 
   .hamburger-menu {
     display: block;
-  }
-
-  .header-img {
-    right: 25%;
-  }
-
-  .about {
-    margin-bottom: 200px;
   }
 
   .blog-intro .additions-img,
@@ -1237,10 +1244,6 @@ main .wrapper {
   .about,
 .profile-text {
     margin: 30px 10px;
-  }
-
-  .header-img {
-    right: 20px;
   }
 
   .subsection {

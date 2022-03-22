@@ -4,6 +4,7 @@ html {
     font-size: 125%;
 }
 
+
 ul, 
 li, 
 input, 
@@ -17,6 +18,7 @@ button,
 footer {
     text-align: center;
 }
+
 
 h1, 
 h2, 
@@ -48,21 +50,25 @@ h2 {
     margin-top: 160px;
 }
 
+
 h3 {
     font-size: 2.1rem;
     letter-spacing: 1px;
     padding: 30px;
 }
 
+
 .blog-header h2 {
     margin-right: 95px;
 }
+
 
 h4 {
     font-size: 1.6rem;
     letter-spacing: 1px;
     padding: 10px 0;
 }
+
 
 p, 
 h5,
@@ -74,16 +80,17 @@ footer {
     font-weight: lighter;
 }
 
+
 p {
     padding: 10px;
 }
+
 
 footer p {
     padding:5px;
     color: black;
     background-color: $primary;
 }
-
 
 
 ul {
@@ -93,6 +100,7 @@ ul {
     letter-spacing: 1px;
     list-style: none;
 }
+
 
 a {
     text-decoration: none;
@@ -106,10 +114,12 @@ a {
     }
 }
 
+
 a {
     margin: 10px 0;
 }
  
+
 .about a,
 .month-profile a {
     color: black;
@@ -117,14 +127,17 @@ a {
     padding: 10px 30px;
 }
 
+
 .blog-intro a {
     background-color: $tertiary;
     padding: 10px 30px;
 }
 
+
 .additions a {
     text-align: left;
 }
+
 
 .header-nav ul {
     display: flex;
@@ -133,11 +146,4 @@ a {
     li {
         margin: 10px 30px;
     }
-}
-
-.contact-intro a,
-.profile a {
-    color: black;
-    background-color: $primary;
-    padding: 10px 30px;
 }
