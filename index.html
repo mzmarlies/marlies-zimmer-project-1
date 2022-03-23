@@ -38,7 +38,10 @@
                 <!-- dropdown menu for mobile size -->
                 <nav class="hamburger-menu"> 
                     <ul class="dropdown-nav">
-                        <li><span class="menu-icon"><i class="fa-solid fa-bars"></i></span>
+                        <li>
+                            <button class="menu-icon">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
                             <ul class="dropdown-menu">
                                 <li><a href="./index.html">home</a></li>
                                 <li><a href="./index.html#about">about</a></li>
@@ -51,7 +54,7 @@
 
 
                 <div class="top-heading home-heading">
-                    <h1>under the sea  TESTING I'M PUSHING TO FEATURE. ONE MORE TEST</h1>
+                    <h1>under the sea</h1>
                     <div class="header-img">
                         <img src="./assets/home-box-header.png" alt="close up of goldfish in front of coral">
                     </div>
@@ -247,5 +250,29 @@
         </p>
     </footer>
 </body>
+
+<script>
+    // need to create afunction to get into the button
+    // then code showing the button
+
+    // function handleClick(event) {
+    //     console.log(event.target);
+    //     event.target.style.display = 'block';
+    // };
+    const menuIcon = document.querySelector('.menu-icon');
+
+    menuIcon.addEventListener('click', function(){
+        console.log(document.querySelector('.dropdown-menu'));
+
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        function handleClick(event) {
+            event.target.style.display = 'block';
+            
+            // console.log(event.target);
+        };
+    });
+
+</script>
 
 </html>

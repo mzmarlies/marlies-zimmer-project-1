@@ -170,8 +170,18 @@
                                 voluptatibus doloremque vitae optio!
                             </p>  
                         </div>
-                    
+
                     </div> <!-- comment two ends -->
+
+                    <div class="comment-div">
+
+                        <div class="comment-text new-comments-div" id="new-comments-here">
+
+                            <!-- ADDED COMMENTS WILL GO HERE-->
+
+                        </div>
+
+                    </div>
 
                 </section> <!-- comment section ends -->
 
@@ -179,7 +189,7 @@
 
             <section class="form-section blog-form">
                 <div class="wrapper">
-                    <form action="#" method="POST" class="contact-form" name="contact-form">
+                    <form action="#" method="POST" id="comment-form" class="contact-form" name="contact-form">
                         <label for="name" class="sr-only">Enter Your Name</label>
                         <input type="text" id="name" placeholder="Name">
 
@@ -187,7 +197,8 @@
                         <input type="text" id="email" placeholder="Email Address">
 
                         <label for="comment" class="sr-only">Leave a comment</label>
-                        <textarea name="comment" id="comment" placeholder="Comment" cols="50" rows="10"></textarea>
+                        <!-- class="user-comment" -->
+                        <textarea  name="comment" id="comment" placeholder="Comment" cols="50" rows="10"></textarea>
 
                         <button class="comment-button" type="submit">post comment</button>
                     </form>
@@ -203,5 +214,50 @@
         </p>
     </footer>
 </body>
+
+
+<script>
+// PSUEDO CODE:
+// Listen for when the form is submitted and store it in a variable
+// when the form is submitted:
+    // - get the user comment from the form's text input and store it in a variable
+    // - display that input as a list item on the page in the ul
+
+const commentForm = document.getElementById('comment-form');
+
+commentForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+        
+    // store the targeted element in a variable 
+    const userComment = document.getElementById('comment');
+    console.log(userComment.value);
+
+    // store the user's comment as a variable
+    const addedComment = userComment.value;
+
+    // clear the input after submitted
+    userComment.value = '';
+
+    // ensure it's not an empty string
+    if(addedComment) {
+        // store the new-comments-div in a variable
+        const newCommentsHere = document.getElementById('new-comments-here')
+
+
+        // create a new paragraph to hold the user's comment
+        const paragraph = document.createElement('p');
+        paragraph.textContent = addedComment;
+
+        // attach that new paragraph to the new-coment-div
+        document.getElementById('new-comments-here').appendChild(paragraph);
+
+        userComment.value = '';
+        
+    }   
+}); // end of the form submit
+
+
+
+</script>
 
 </html>

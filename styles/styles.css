@@ -488,23 +488,14 @@ header {
 .hamburger-menu .menu-icon {
   font-size: 1.6rem;
   position: relative;
-  padding: 20px 0;
+  padding: 0;
   cursor: pointer;
+  background-color: transparent;
 }
 .hamburger-menu .dropdown-nav {
   position: absolute;
   margin: 0 20px;
   padding: 0 20px;
-}
-.hamburger-menu .dropdown-nav a:active .dropdown-menu,
-.hamburger-menu .dropdown-nav li:hover .dropdown-menu,
-.hamburger-menu .dropdown-nav li:focus .dropdown-menu li a {
-  display: block;
-  position: absolute;
-  left: 0;
-  color: #86E0F9;
-  text-decoration: underline;
-  cursor: pointer;
 }
 .hamburger-menu .dropdown-menu {
   display: none;
@@ -515,6 +506,7 @@ header {
   padding: 0 10px;
   color: #ffffff;
   background-color: rgba(17, 31, 54, 0.7);
+  cursor: pointer;
 }
 .hamburger-menu .dropdown-menu li {
   padding: 5px 0;
@@ -877,6 +869,13 @@ header {
 }
 .comments .comment-text {
   width: 80%;
+}
+
+.new-comments-div p {
+  height: 10vh;
+  color: black;
+  background-color: #86E0F9;
+  margin: 30px 30px 30px 70px;
 }
 
 .form-section {
