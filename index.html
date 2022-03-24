@@ -39,10 +39,10 @@
                 <nav class="hamburger-menu"> 
                     <ul class="dropdown-nav">
                         <li>
-                            <button class="menu-icon">
+                            <button class="menu-icon" id="menu-icon">
                                 <i class="fa-solid fa-bars"></i>
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" id="dropdown-menu">
                                 <li><a href="./index.html">home</a></li>
                                 <li><a href="./index.html#about">about</a></li>
                                 <li><a href="./blog.html">blog</a></li>
@@ -255,22 +255,15 @@
     // need to create afunction to get into the button
     // then code showing the button
 
-    // function handleClick(event) {
-    //     console.log(event.target);
-    //     event.target.style.display = 'block';
-    // };
-    const menuIcon = document.querySelector('.menu-icon');
+    
+    const menuIcon = document.getElementById('menu-icon');
 
     menuIcon.addEventListener('click', function(){
-        console.log(document.querySelector('.dropdown-menu'));
+        console.log(document.getElementById('dropdown-menu'));
 
-        const dropdownMenu = document.querySelector('.dropdown-menu');
+        const dropdownMenu = document.getElementById('dropdown-menu');
 
-        function handleClick(event) {
-            event.target.style.display = 'block';
-            
-            // console.log(event.target);
-        };
+        dropdownMenu.style.display = 'block';
     });
 
 </script>

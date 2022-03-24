@@ -871,11 +871,20 @@ header {
   width: 80%;
 }
 
-.new-comments-div p {
-  height: 10vh;
+.comments .comment-div #new-post-img {
+  display: none;
+  height: 90px;
+  width: 90px;
+  background-color: #0f614e;
+  text-align: center;
   color: black;
-  background-color: #86E0F9;
-  margin: 30px 30px 30px 70px;
+}
+.comments .comment-div .new-comments-div {
+  margin-left: 0;
+}
+.comments .comment-div .new-comments-div p {
+  margin-left: 0;
+  padding: 10px 0;
 }
 
 .form-section {

@@ -174,7 +174,10 @@
                     </div> <!-- comment two ends -->
 
                     <div class="comment-div">
-
+                        
+                        <div class="comment-img" id="new-post-img">
+                            <p>New Post</p>
+                        </div>
                         <div class="comment-text new-comments-div" id="new-comments-here">
 
                             <!-- ADDED COMMENTS WILL GO HERE-->
@@ -187,9 +190,9 @@
 
             </div> <!-- wrapper ends -->
 
-            <section class="form-section blog-form">
+            <section class="form-section blog-form" id="blog-form">
                 <div class="wrapper">
-                    <form action="#" method="POST" id="comment-form" class="contact-form" name="contact-form">
+                    <form action="#" method="POST" class="contact-form" name="contact-form">
                         <label for="name" class="sr-only">Enter Your Name</label>
                         <input type="text" id="name" placeholder="Name">
 
@@ -223,20 +226,26 @@
     // - get the user comment from the form's text input and store it in a variable
     // - display that input as a list item on the page in the ul
 
-const commentForm = document.getElementById('comment-form');
+const commentForm = document.getElementById('blog-form');
+
 
 commentForm.addEventListener('submit', function(event) {
     event.preventDefault();
         
     // store the targeted element in a variable 
     const userComment = document.getElementById('comment');
-    console.log(userComment.value);
-
+    const userName = document.getElementById('name');
+    const userEmail = document.getElementById('email');
+    
     // store the user's comment as a variable
     const addedComment = userComment.value;
+    const addedName = userName.value;
+    const addedEmail = userEmail.value;
 
     // clear the input after submitted
     userComment.value = '';
+    userName.value = '';
+    userEmail.value = '';
 
     // ensure it's not an empty string
     if(addedComment) {
@@ -248,12 +257,23 @@ commentForm.addEventListener('submit', function(event) {
         const paragraph = document.createElement('p');
         paragraph.textContent = addedComment;
 
+        const paragraphName = document.createElement('p');
+        paragraphName.textContent = addedName;
+
         // attach that new paragraph to the new-coment-div
-        document.getElementById('new-comments-here').appendChild(paragraph);
+        document.getElementById('new-comments-here').appendChild(paragraphName).appendChild(paragraph);
 
         userComment.value = '';
         
     }   
+    
+
+    // displaying new post img
+    const newPostImg = document.getElementById('new-post-img');
+
+    newPostImg.style.display = 'block';
+
+
 }); // end of the form submit
 
 

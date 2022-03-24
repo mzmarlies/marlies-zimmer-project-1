@@ -122,13 +122,27 @@
 
 
 // NEW COMMENTS ADDED IN::after
-
-.new-comments-div p {
-    height: 10vh;
-    color: black;
-    background-color: $primary;
-    margin: 30px 30px 30px 70px;
+.comments {
+    .comment-div {
+        #new-post-img {
+            display: none;
+            height: 90px;
+            width: 90px;
+            background-color: $secondary;
+            text-align: center;
+            color: black;
+        }
+        .new-comments-div {
+            margin-left: 0;
+            
+            p {
+                margin-left: 0;
+                padding: 10px 0;
+            }
+        }
+    }
 }
+
 
 
 
