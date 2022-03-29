@@ -96,50 +96,40 @@
 .comments {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
+
+    li {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
 
     h4 {
         margin: 20px;
     }
 
-    .comment-div{
+    .comment-div, 
+    .new-comments {
         display: flex;
         justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+        width: 100%;
+    }
+
+    .comment-div ul {
+        padding: 30px 15px;
     }
 
     .comment-img {
         height: 85px;
-        width: auto;
+        width: 85px;
         margin: 20px;
+        object-fit: cover;
     }
 
     .comment-text {
         width: 80%;
-    
-    }
-}
-
-
-
-// NEW COMMENTS ADDED IN::after
-.comments {
-    .comment-div {
-        #new-post-img {
-            display: none;
-            height: 90px;
-            width: 90px;
-            background-color: $secondary;
-            text-align: center;
-            color: black;
-        }
-        .new-comments-div {
-            margin-left: 0;
-            
-            p {
-                margin-left: 0;
-                padding: 10px 0;
-            }
-        }
     }
 }
 

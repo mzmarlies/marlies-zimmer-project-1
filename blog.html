@@ -137,56 +137,64 @@
         
 
             <div class="wrapper">
-                <section class="comments">
+                <ul class="comments">
                     <h4>comments:</h4>
-                    <div class="comment-div">
-
+                    <li class="comment-div">
                         <div class="comment-img">
                             <img src="./assets/comment-1.jpg" alt="face of the person who wrote the comment.">
                         </div>
 
                         <div class="comment-text">
-                            <p>Tuesday October 9th, 2018 by Jeremy</p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quod illo nam commodi quia
-                                itaque ea ad pariatur numquam inventore deleniti voluptas tenetur assumenda dolor nostrum,
-                                voluptatibus doloremque vitae optio!
-                            </p>
+                            <div>
+                                <p>Tuesday October 9th, 2018 by Jeremy</p>
+                            </div>
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quod illo nam commodi quia
+                                    itaque ea ad pariatur numquam inventore deleniti voluptas tenetur assumenda dolor nostrum,
+                                    voluptatibus doloremque vitae optio!
+                                </p>
+                            </div>
+                            
                         </div>
                         
-                    </div> <!-- comment one ends -->
+                    </li> <!-- comment one ends -->
 
-                    <div class="comment-div">
+                    <li class="comment-div comment-two">
 
                         <div class="comment-img">
                             <img src="./assets/comment-2.jpg" alt="face of the person who wrote the comment.">
                         </div>
                         
                         <div class="comment-text">
-                            <p>Wednesday October 10th, 2018 by Julia</p>
-                            <p>
+                            <div>
+                                <p>Wednesday October 10th, 2018 by Julia</p>
+                            </div>
+                            <div>
+                                <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quod illo nam commodi quia
                                 itaque ea ad pariatur numquam inventore deleniti voluptas tenetur assumenda dolor nostrum,
                                 voluptatibus doloremque vitae optio!
-                            </p>  
+                            </p> 
+                            </div>
+                                
                         </div>
 
-                    </div> <!-- comment two ends -->
+                    </li> <!-- comment two ends -->
 
-                    <div class="comment-div">
-                        
-                        <div class="comment-img" id="new-post-img">
-                            <p>New Post</p>
+                    <!-- take out inner lists here, find the comments ul and append the div with image and text to that ul -->
+
+                    <li class="comment-div new-comments">
+                        <ul id="new-comment-list">
+
+                        </ul>
+                    </li>
+                    <!-- <li class="comment-div" id="comment-div">
+                        <div class="comment-img" id="comment-img"></div>
+                        <div class="comment-text" id="new-comment-list">
                         </div>
-                        <div class="comment-text new-comments-div" id="new-comments-here">
-
-                            <!-- ADDED COMMENTS WILL GO HERE-->
-
-                        </div>
-
-                    </div>
-
-                </section> <!-- comment section ends -->
+                    </li> -->
+                </ul> <!-- comment section ends -->
 
             </div> <!-- wrapper ends -->
 
@@ -218,66 +226,6 @@
     </footer>
 </body>
 
-
-<script>
-// PSUEDO CODE:
-// Listen for when the form is submitted and store it in a variable
-// when the form is submitted:
-    // - get the user comment from the form's text input and store it in a variable
-    // - display that input as a list item on the page in the ul
-
-const commentForm = document.getElementById('blog-form');
-
-
-commentForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-        
-    // store the targeted element in a variable 
-    const userComment = document.getElementById('comment');
-    const userName = document.getElementById('name');
-    const userEmail = document.getElementById('email');
-    
-    // store the user's comment as a variable
-    const addedComment = userComment.value;
-    const addedName = userName.value;
-    const addedEmail = userEmail.value;
-
-    // clear the input after submitted
-    userComment.value = '';
-    userName.value = '';
-    userEmail.value = '';
-
-    // ensure it's not an empty string
-    if(addedComment) {
-        // store the new-comments-div in a variable
-        const newCommentsHere = document.getElementById('new-comments-here')
-
-
-        // create a new paragraph to hold the user's comment
-        const paragraph = document.createElement('p');
-        paragraph.textContent = addedComment;
-
-        const paragraphName = document.createElement('p');
-        paragraphName.textContent = addedName;
-
-        // attach that new paragraph to the new-coment-div
-        document.getElementById('new-comments-here').appendChild(paragraphName).appendChild(paragraph);
-
-        userComment.value = '';
-        
-    }   
-    
-
-    // displaying new post img
-    const newPostImg = document.getElementById('new-post-img');
-
-    newPostImg.style.display = 'block';
-
-
-}); // end of the form submit
-
-
-
-</script>
+<script src="./script.js"></script>
 
 </html>

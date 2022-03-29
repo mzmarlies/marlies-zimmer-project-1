@@ -849,42 +849,46 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 90%;
+  width: 100%;
+}
+.comments li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 .comments h4 {
   margin: 20px;
 }
-.comments .comment-div {
+.comments .comment-div,
+.comments .new-comments {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0;
+  width: 100%;
+}
+.comments .comment-div ul {
+  padding: 30px 15px;
 }
 .comments .comment-img {
   height: 85px;
-  width: auto;
+  width: 85px;
   margin: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .comments .comment-text {
   width: 80%;
-}
-
-.comments .comment-div #new-post-img {
-  display: none;
-  height: 90px;
-  width: 90px;
-  background-color: #0f614e;
-  text-align: center;
-  color: black;
-}
-.comments .comment-div .new-comments-div {
-  margin-left: 0;
-}
-.comments .comment-div .new-comments-div p {
-  margin-left: 0;
-  padding: 10px 0;
 }
 
 .form-section {
