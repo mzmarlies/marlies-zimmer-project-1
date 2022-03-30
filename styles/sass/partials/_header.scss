@@ -71,16 +71,24 @@ header {
         padding: 0 20px;
     }
     
-    // .dropdown-nav a:active .dropdown-menu,
-    // .dropdown-nav li:hover .dropdown-menu,
-    // .dropdown-nav li:focus .dropdown-menu li a {
-    //     display: block;
-    //     position: absolute;
-    //     left: 0;
-    //     color: $primary;
-    //     text-decoration: underline;
-    //     cursor: pointer;
-    // }
+    .dropdown-nav a:active .dropdown-menu,
+    .dropdown-nav li:hover .dropdown-menu,
+    .dropdown-nav li:focus .dropdown-menu li a {
+        display: block;
+        position: absolute;
+        left: 0;
+        color: $primary;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .hide-menu {
+        display: none;
+    }
+
+    .show-menu {
+        display: block;
+    }
     
     .dropdown-menu {
         display: none;

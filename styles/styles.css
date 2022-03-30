@@ -497,6 +497,22 @@ header {
   margin: 0 20px;
   padding: 0 20px;
 }
+.hamburger-menu .dropdown-nav a:active .dropdown-menu,
+.hamburger-menu .dropdown-nav li:hover .dropdown-menu,
+.hamburger-menu .dropdown-nav li:focus .dropdown-menu li a {
+  display: block;
+  position: absolute;
+  left: 0;
+  color: #86E0F9;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.hamburger-menu .hide-menu {
+  display: none;
+}
+.hamburger-menu .show-menu {
+  display: block;
+}
 .hamburger-menu .dropdown-menu {
   display: none;
   margin: 0;
@@ -877,8 +893,11 @@ header {
   margin: 30px 0;
   width: 100%;
 }
-.comments .comment-div ul {
+.comments .comment-div li {
   padding: 30px 15px;
+}
+.comments .comment-two {
+  margin-bottom: 0;
 }
 .comments .comment-img {
   height: 85px;

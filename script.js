@@ -1,19 +1,3 @@
-// PSEUDO CODE:
-// Store menu-icon in a variable. 
-// when it gets clicked, show menu.
-
- const menuIcon = document.querySelector('.menu-icon');
-
-    menuIcon.addEventListener('click', function(){
-        console.log(document.getElementById('dropdown-menu'));
-
-        const dropdownMenu = document.querySelector('.dropdown-menu');
-
-        dropdownMenu.style.display = 'block';
-    });
-
-
-
 // PSUEDO CODE:
 // Listen for when the form is submitted and store it in a variable
 // when the form is submitted:
@@ -51,7 +35,7 @@ formElement.addEventListener('submit', function(event) {
         const listItem = document.createElement('li');
         listItem.innerHTML = (`
         <div class="comment-img">
-            <img src="https://www.fillmurray.com/200/200">
+            <img src="https://www.placecage.com/200/200">
         </div>
         `);
 
